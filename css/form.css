@@ -1,0 +1,151 @@
+/* 画像 */
+.form-image {
+    width: 20%;
+    margin-bottom: 50px;
+}
+@media(min-width: 501px) and (max-width: 700px) {
+    .form-image {
+        width: 40%;
+    }
+    .form-wrapper {
+        font-size: 1.2rem;
+    }
+    .form-wrapper label input {
+        width: 100%;
+    }
+}
+@media(max-width: 500px) {
+    .form-image {
+        width: 60%;
+    }
+    .form-wrapper label input {
+        width: 100%;
+    }
+    .form-wrapper label textarea {
+        width: 100%;
+    }
+}
+
+/* フォーム */
+.form-wrapper {
+    padding: 50px;
+    font-family: Osaka, sans-serif;
+}
+.form-wrapper label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.form-wrapper .sex-wrapper {
+    margin-bottom: 30px;
+}
+.form-wrapper label input {
+    width: 60%;
+    height: 25px;
+    padding: 5px;
+    border: 2px dashed #eee;
+    text-align: center;
+}
+.form-wrapper label p,
+.form-wrapper .sex-wrapper p {
+    margin-bottom: 5px;
+    color: #005;
+}
+.form-wrapper textarea {
+    width: 60%;
+    padding: 5px;
+    border: 5px dashed #eee;
+}
+input:focus {
+    outline: none;
+}
+
+/* ボタン */
+.main_button {
+    padding: 10px 30px;
+    font-size: 1.0rem;
+    background-color: rgb(67, 70, 255);
+    color: #fff;
+    border-style: none;
+    border-radius: 20px;
+    box-shadow: #000 0px 10px 10px -5px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+.main_button a {
+    color: #fff;
+}
+.main_button:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+    transition: 0.3s;
+}
+/* 遷移ボタン */
+.to_other {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+    display: inline-block;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 5px 10px;
+    border: dashed 2px #fff;
+    background: linear-gradient(-135deg, #E4A972, #9941D8);
+}
+.to_other a,
+.to_home a
+{
+    color: #fff;
+}
+.to_home {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+    display: inline-block;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 5px 10px;
+    border: dashed 2px #fff;
+    background: linear-gradient(-135deg, #E4A972, #9941D8);
+}
+
+
+/* student_regist_check.php */
+/* 正常登録完了レイアウト　 */
+.done-image {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.done-script {
+    margin-bottom: 50px;
+    font-family: Osaka, sans-serif;
+}
+
+/* 出席申請ページ */
+.class-comment {
+    height: 200px;
+}
+
+
+/* フッターメニュー */
+.footer-nav {
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+
+.footer-nav ul{
+    width: 100%;
+    display: flex;
+    background-color: #eee;
+}
+
+.footer-nav li {
+    font-size: 25px;
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    line-height: 50px;
+}

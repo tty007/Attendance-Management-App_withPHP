@@ -1,0 +1,143 @@
+/* トップページナビゲーション */
+ul.nav-items {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+}
+.nav-button {
+    display: inline-block;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 5px 10px;
+    border: dashed 2px #fff;
+    background: linear-gradient(-135deg, #E4A972, #9941D8);
+}
+.nav-button a {
+    color: #fff;
+}
+
+/* トップ画像 */
+.top-images-wrapper {
+    position: relative;
+}
+.top-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+.top-sub-image {
+    position: absolute;
+    top: 45%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 20%;
+    height: auto;
+}
+.top-images-wrapper p {
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: #9941D8;
+    font-size: 3vw;
+    font-family: "Nico Moji";
+}
+
+.wf-nicomoji { font-family: "Nico Moji"; }
+@media(max-width: 700px) {
+    .top-sub-image {
+        width: 40%;
+        height: auto;
+    }
+    .top-images-wrapper p {
+        position: absolute;
+        top: 65%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        font-size: 4vw;
+    }
+}
+
+/* サービスについて（カードレイアウト） */
+.about-service h2 {
+    font-family: 'Spicy Rice', cursive;
+    margin: 20px auto;
+    color: #9941D8;
+}
+.card {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eee;
+    transition: 2s;
+}
+.card:hover {
+    box-shadow: 0px 10px 15px -5px;
+    transition: 1s;
+}
+.card i {
+    font-size: 150px;
+    margin: 20px;
+}
+.card i.fa-chalkboard-teacher {
+    color: #ACB6E5;
+    background: -webkit-linear-gradient(0deg, #ACB6E5, #86FDE8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card i.fa-chart-pie {
+    color: #ACB6E5;
+    background: radial-gradient(#F2B9A1, #EA6264);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card p {
+    margin: 20px 0 20px;
+}
+@media(max-width: 700px) {
+    .card {
+        width: 70%;
+    }
+    .card i {
+        font-size: 100px;
+    }
+}
+
+/* フッター */
+footer {
+    width: 100vw;
+    height: 50px;
+    background-color: #9941D8;
+}
+footer p {
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    height: 100%;
+    line-height: 50px;
+}
+/* フッターメニュー */
+.footer-nav {
+    width: 100vw;
+    height: 50px;
+    z-index: 10;
+}
+
+.footer-nav ul{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: #eee;
+}
+
+.footer-nav li {
+    font-size: 25px;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    line-height: 50px;
+}

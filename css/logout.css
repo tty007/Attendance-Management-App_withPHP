@@ -1,0 +1,31 @@
+.form-image {
+    width: 20%;
+    height: auto;
+    margin: 30px auto;
+}
+@media (max-width: 700px) {
+    .form-image {
+        width: 50%;
+    }
+}
+
+/* ボタン */
+.main_button {
+    padding: 10px 30px;
+    font-size: 1.0rem;
+    background-color: rgb(67, 70, 255);
+    color: #fff;
+    border-style: none;
+    border-radius: 20px;
+    box-shadow: #000 0px 10px 10px -5px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+.main_button a {
+    color: #fff;
+}
+.main_button:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+    transition: 0.3s;
+}

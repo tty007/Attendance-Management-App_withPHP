@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.center {
+    text-align: center;
+}
+
+/* フッターメニュー */
+.footer-nav {
+    width: 100vw;
+    height: 50px;
+    z-index: 10;
+}
+
+.footer-nav ul{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: #eee;
+}
+
+.footer-nav li {
+    font-size: 25px;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    line-height: 50px;
+}

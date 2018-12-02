@@ -1,0 +1,32 @@
+h3 {
+    margin: 30px auto;
+    padding: 10px;
+    width: 100%;
+    background-color: #eee;
+}
+
+.sid {
+    margin-top: 20px;
+    font-weight: bold;
+}
+.sdate {
+    font-size: 10px;
+    color: rgb(77, 77, 77);
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    background-color: rgb(219, 181, 255);
+    text-align: left;
+}
+
+div.comment:last-child {
+    margin-bottom: 80px;
+}
+
+@media(max-width: 700px) {
+    .content {
+        padding: 10px 10px;
+    }
+}

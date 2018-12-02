@@ -1,0 +1,149 @@
+h1 {
+    margin: 20px auto;
+    font-weight: bold;
+}
+
+div.card {
+    text-align: center;
+    width: 50%;
+    margin: 30px auto;
+    min-height: 300px;
+    box-shadow: 0px 10px 10px -5px;
+    border-top: 5px dashed rgba(107, 0, 194, 0.5);
+}
+div.card:last-child {
+    margin-bottom: 80px;
+}
+.card h2 {
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+
+p.prof {
+    font-size: 20px;
+}
+
+p.class-content-title {
+    margin: 20px 0 20px 0;
+    width: 100%;
+    background-color: #eee;
+    font-family: 'Spicy Rice', cursive;
+    padding: 5px;
+}
+p.class-content-description {
+    padding: 10px;
+    text-align: left;
+}
+
+.to-class-index {
+    margin: 20px auto;
+    min-width: 25%;
+    padding: 5px 10px;
+    font-size: 1.0rem;
+    background-color: rgb(67, 70, 255);
+    border-style: none;
+    border-radius: 20px;
+    box-shadow: rgb(77, 77, 77) 0px 10px 10px -5px;
+    transition: 0.5s;
+    color: #fff;
+}
+.to-class-index a {
+    color: #fff;
+}
+
+.to-class-index:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+    transition: 0.3s;
+}
+
+@media(max-width: 700px) {
+    div.card {
+        width: 80%;
+    }
+    p.prof {
+        font-size: 10px;
+    }
+    /* クラス詳細 */
+    .class-content-description-detail {
+        padding: 10px;
+    }
+}
+
+/* クラス詳細ページ */
+.class-name {
+    margin: 30px 5px auto;
+}
+.class-content-description-detail {
+    padding: 30px;
+    text-align: left;
+    border-bottom: 10px dashed #eee;
+}
+
+/* 授業削除 */
+.delete-description {
+    margin: 30px 20px auto;
+}
+
+/* 出席カード表示 */
+.attend-card {
+    text-align: center;
+    width: 50%;
+    margin: 30px auto;
+    padding: 10px;
+    min-height: 100px;
+    box-shadow: 0px 10px 10px -5px;
+    border-top: 5px dashed rgba(107, 0, 194, 0.5);
+}
+.attend-card:last-child {
+    margin-bottom: 80px;
+}
+.attend-card h3 {
+    font-size: 15px;
+}
+@media(max-width: 700px) {
+    .attend-card {
+        width: 80%;
+    }
+}
+
+.to-attend {
+    margin: 20px auto;
+    min-width: 25%;
+    padding: 5px;
+    font-size: 1.0rem;
+    background-color: rgb(34, 122, 253);
+    border-style: none;
+    border-radius: 20px;
+    box-shadow: rgb(114, 114, 114) 0px 10px 10px -5px;
+    transition: 0.5s;
+    color: #fff;
+}
+.to-attend:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+    transition: 0.3s;
+}
+
+/* フッターメニュー */
+.footer-nav {
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+
+.footer-nav ul{
+    width: 100%;
+    display: flex;
+    background-color: #eee;
+}
+
+.footer-nav li {
+    font-size: 25px;
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    line-height: 50px;
+}
