@@ -49,6 +49,7 @@
     $num =pg_num_rows($result);
     //出席確認クエリ
     $query2 = "select * from attends where card_id=$1 and sid=$2";
+    $result2 = pg_prepare($conn, "shusseki", $query2);
   ?>
 
   <div class="center">
@@ -62,10 +63,7 @@
         if (isset($_SESSION['sid'])) {
           $card_id = $row['auto_id'];
           $sid = $_SESSION['sid'];
-          //prepareのあとにexecuteせずに同名でprepareしたらエラーが出る
-          //無名ステートメントで上書き
-          $result2 = pg_prepare($conn, "", $query2);
-          $result2 = pg_execute($conn, "", array($card_id, $sid));
+          $result2 = pg_execute($conn, "shusseki", array($card_id, $sid));
           $num2 =pg_num_rows($result2);
         }
       ?>

@@ -22,7 +22,7 @@
   <div class="center">
     <img src="images/webapp_logo.png" class="form-image">
     <div class="center">
-      <p>ログアウトしました。</p>
+      <p class="logmessage">ログアウトしました。</p>
       <button class="main_button"><a href="index.php">TOPへ</a></button>
     </div>
   </div>

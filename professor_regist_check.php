@@ -85,8 +85,8 @@
     $result = pg_execute($conn, 'pregist', array($professor_id, $professor_name, $professor_email, $sex, $pwd));
   ?>
   <!-- ここにエラーがなかった時のHTML -->
-  <img src="images/webapp_logo.png" class="form-image done-image center">
   <div class="center done-script">
+  <img src="images/webapp_logo.png" class="form-image done-image center">
     <p>正常に登録されました!</p>
   </div>
   <div class="center">

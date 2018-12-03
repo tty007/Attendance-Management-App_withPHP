@@ -87,7 +87,7 @@ ul.nav-items {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.card i.fa-chart-pie {
+.card i.fa-mobile-alt {
     color: #ACB6E5;
     background: radial-gradient(#F2B9A1, #EA6264);
     -webkit-background-clip: text;
@@ -104,6 +104,79 @@ ul.nav-items {
         font-size: 100px;
     }
 }
+
+/* UIの特徴説明 */
+.about-ui h2 {
+    font-family: 'Spicy Rice', cursive;
+    margin: 20px auto;
+    color: #9941D8;
+}
+.features {
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 70vw;
+    padding: 30px;
+    background-color: #eee;
+}
+.features:hover {
+    box-shadow: 0px 10px 15px -5px;
+    transition: 1s;
+}
+.features img {
+    width: 50vw;
+}
+.features p {
+    margin-top: 30px;
+}
+@media(min-width: 700px) {
+    .features p {
+        display: none;
+    }
+    .about-ui {
+        position: relative;
+    }
+    .ui {
+        width: 50vw;
+    }
+    .ui img {
+        width: 30vw;
+    }
+    .features-tile {
+        position: relative;
+        margin: 100px auto 20px;
+        min-height: 700px;
+    }
+    .tile-contents {
+        position: absolute;
+        width: 25vw;
+    }
+    .tile-contents img {
+        width: 20vw;
+    }
+    .tile-1 {
+        z-index: 1;
+        left: 200px;
+        top: 100px;
+        transform: rotate(-30deg);
+    }
+    .tile-2 {
+        z-index: 2;
+        left: 450px;
+        top: 90px;
+        transform: rotate(-10deg);
+    }
+    .tile-3 {
+        z-index: 3;
+        top: 250px;
+        transform: rotate(20deg);
+    }
+    .tile-4 {
+        z-index: 4;
+        top: -30px;
+        transform: rotate(10deg);
+    }
+}
+
 
 /* フッター */
 footer {
@@ -141,3 +214,4 @@ footer p {
     justify-content: center;
     line-height: 50px;
 }
+

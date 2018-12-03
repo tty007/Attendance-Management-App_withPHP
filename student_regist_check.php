@@ -76,8 +76,8 @@
     $result = pg_execute($conn, 'sregist', array($student_id, $student_name, $student_email, $sex, $pwd));
   ?>
   <!-- ここにエラーがなかった時のHTML -->
-  <img src="images/webapp_logo.png" class="form-image done-image center">
   <div class="center done-script">
+  <img src="images/webapp_logo.png" class="form-image done-image center">
     <p>正常に登録されました!</p>
   </div>
   <div class="center">

@@ -8,6 +8,10 @@
         width: 50%;
     }
 }
+p.logmessage {
+    margin: 20px;
+    margin-bottom: 30px;
+}
 
 /* ボタン */
 .main_button {
@@ -20,6 +24,7 @@
     box-shadow: #000 0px 10px 10px -5px;
     transition: 0.5s;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 .main_button a {
     color: #fff;
