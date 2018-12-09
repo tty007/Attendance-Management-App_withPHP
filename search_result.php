@@ -1,10 +1,11 @@
 <?php
-	session_name('j160368t');
+  session_name('j160368t');
   session_start();
+  $keyword = "%".$_GET['keyword']."%";
   $conn = pg_connect("host=localhost user=j160368t dbname=j160368t");
-  $query = "SELECT * FROM classes";
+  $query = "SELECT * FROM classes WHERE classes.name like $1";
 	$result = pg_prepare($conn, "list", $query);
-  $result = pg_execute($conn, "list", array());
+  $result = pg_execute($conn, "list", array($keyword));
   $num =pg_num_rows($result);
 ?>
 <!DOCTYPE html>
@@ -13,14 +14,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>講義一覧ページ</title>
+  <title>講義一覧ページ(検索)</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/classes.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
   <div class="center">
-    <h1>授業一覧</h1>
+    <h1>検索授業一覧</h1>
     <?php for ($i = 0; $i < $num; $i++) : ?>
     <!-- for文の中身 -->
       <?php $row = pg_fetch_assoc($result, $i); ?>

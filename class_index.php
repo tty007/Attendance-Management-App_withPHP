@@ -107,7 +107,7 @@
       <ul>
         <li><a href="index.php"><i class="fas fa-home"></i></a></li>
         <li><a href="classes.php"><i class="fas fa-align-left"></i></a></li>
-        <li><i class="fas fa-search"></i></li>
+        <li><a href="search_classes.php"><i class="fas fa-search"></i></a></li>
         <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
       </ul>
     </nav>
